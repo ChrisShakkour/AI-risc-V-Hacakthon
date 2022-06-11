@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="de10lite_sopc" kind="de10lite_sopc" version="1.0" fabric="QSYS">
  <!-- Format version 20.1 711 (Future versions may contain additional information.) -->
- <!-- 2022.06.03.14:00:01 -->
+ <!-- 2022.06.10.06:58:06 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1654254001</value>
+  <value>1654833486</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>

@@ -100,6 +100,15 @@
 #define PLF_DIP_NUM  10
 #define PLF_DIP_NAME "DIP SW"
 
+// ACCEL address
+#define PLF_ACCEL_ADDR 0xf0010000
+#define ACCEL_CSR_OFFSET 0
+#define ACCEL_COUNTER_OFFSET 1
+#define ACCEL_A_OFFSET 2
+#define ACCEL_B_OFFSET 3
+#define ACCEL_C_OFFSET 4
+
+ 
 // external interrupt lines
 
 #define PLF_IRQ_MAP                      \

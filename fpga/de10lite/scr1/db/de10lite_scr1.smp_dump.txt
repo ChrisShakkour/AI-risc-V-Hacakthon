@@ -76,10 +76,11 @@ wbstate.10 0 1 0 1
 wbstate.11 1 0 0 1 
 
 State Machine - |de10lite_scr1|scr1_top_ahb:i_scr1|scr1_dmem_router:i_dmem_router|port_sel_r
-Name port_sel_r.SCR1_SEL_PORT0 port_sel_r.SCR1_SEL_PORT2 port_sel_r.SCR1_SEL_PORT1 
-port_sel_r.SCR1_SEL_PORT0 0 0 0 
-port_sel_r.SCR1_SEL_PORT1 1 0 1 
-port_sel_r.SCR1_SEL_PORT2 1 1 0 
+Name port_sel_r.SCR1_SEL_PORT3 port_sel_r.SCR1_SEL_PORT2 port_sel_r.SCR1_SEL_PORT1 port_sel_r.SCR1_SEL_PORT0 
+port_sel_r.SCR1_SEL_PORT0 0 0 0 0 
+port_sel_r.SCR1_SEL_PORT1 0 0 1 1 
+port_sel_r.SCR1_SEL_PORT2 0 1 0 1 
+port_sel_r.SCR1_SEL_PORT3 1 0 0 1 
 
 State Machine - |de10lite_scr1|scr1_top_ahb:i_scr1|scr1_core_top:i_core_top|scr1_dm:i_dm|dhi_fsm_ff
 Name dhi_fsm_ff.DHI_STATE_RESUME_RUN dhi_fsm_ff.DHI_STATE_RESUME_REQ dhi_fsm_ff.DHI_STATE_HALT_REQ dhi_fsm_ff.DHI_STATE_EXEC_HALT dhi_fsm_ff.DHI_STATE_EXEC_RUN dhi_fsm_ff.DHI_STATE_EXEC dhi_fsm_ff.DHI_STATE_IDLE 

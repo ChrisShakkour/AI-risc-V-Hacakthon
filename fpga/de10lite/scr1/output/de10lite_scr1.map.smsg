@@ -1,63 +1,63 @@
-Info (12250): 2022.06.03.13:59:54 Progress: Loading qsys/de10lite_sopc.qsys
-Info (12250): 2022.06.03.13:59:55 Progress: Reading input file
-Info (12250): 2022.06.03.13:59:55 Progress: Adding avl_dmem [altera_avalon_mm_bridge 17.1]
+Info (12250): 2022.06.10.06:58:03 Progress: Loading qsys/de10lite_sopc.qsys
+Info (12250): 2022.06.10.06:58:03 Progress: Reading input file
+Info (12250): 2022.06.10.06:58:03 Progress: Adding avl_dmem [altera_avalon_mm_bridge 17.1]
 Warning (12251): Avl_dmem: Used altera_avalon_mm_bridge 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module avl_dmem
-Info (12250): 2022.06.03.13:59:57 Progress: Adding avl_imem [altera_avalon_mm_bridge 17.1]
+Info (12250): 2022.06.10.06:58:04 Progress: Parameterizing module avl_dmem
+Info (12250): 2022.06.10.06:58:04 Progress: Adding avl_imem [altera_avalon_mm_bridge 17.1]
 Warning (12251): Avl_imem: Used altera_avalon_mm_bridge 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module avl_imem
-Info (12250): 2022.06.03.13:59:57 Progress: Adding avl_uart [altera_avalon_mm_bridge 17.1]
+Info (12250): 2022.06.10.06:58:04 Progress: Parameterizing module avl_imem
+Info (12250): 2022.06.10.06:58:04 Progress: Adding avl_uart [altera_avalon_mm_bridge 17.1]
 Warning (12251): Avl_uart: Used altera_avalon_mm_bridge 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module avl_uart
-Info (12250): 2022.06.03.13:59:57 Progress: Adding bld_id [altera_avalon_pio 17.1]
+Info (12250): 2022.06.10.06:58:04 Progress: Parameterizing module avl_uart
+Info (12250): 2022.06.10.06:58:04 Progress: Adding bld_id [altera_avalon_pio 17.1]
 Warning (12251): Bld_id: Used altera_avalon_pio 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module bld_id
-Info (12250): 2022.06.03.13:59:57 Progress: Adding core_clk_freq [altera_avalon_pio 17.1]
+Info (12250): 2022.06.10.06:58:04 Progress: Parameterizing module bld_id
+Info (12250): 2022.06.10.06:58:04 Progress: Adding core_clk_freq [altera_avalon_pio 17.1]
 Warning (12251): Core_clk_freq: Used altera_avalon_pio 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module core_clk_freq
-Info (12250): 2022.06.03.13:59:57 Progress: Adding cpu_clk [clock_source 17.1]
+Info (12250): 2022.06.10.06:58:04 Progress: Parameterizing module core_clk_freq
+Info (12250): 2022.06.10.06:58:04 Progress: Adding cpu_clk [clock_source 17.1]
 Warning (12251): Cpu_clk: Used clock_source 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module cpu_clk
-Info (12250): 2022.06.03.13:59:57 Progress: Adding default_slave [altera_error_response_slave 17.1]
+Info (12250): 2022.06.10.06:58:04 Progress: Parameterizing module cpu_clk
+Info (12250): 2022.06.10.06:58:04 Progress: Adding default_slave [altera_error_response_slave 17.1]
 Warning (12251): Default_slave: Used altera_error_response_slave 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module default_slave
-Info (12250): 2022.06.03.13:59:57 Progress: Adding onchip_ram [altera_avalon_onchip_memory2 17.1]
+Info (12250): 2022.06.10.06:58:04 Progress: Parameterizing module default_slave
+Info (12250): 2022.06.10.06:58:04 Progress: Adding onchip_ram [altera_avalon_onchip_memory2 17.1]
 Warning (12251): Onchip_ram: Used altera_avalon_onchip_memory2 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module onchip_ram
-Info (12250): 2022.06.03.13:59:57 Progress: Adding pio_hex_1_0 [altera_avalon_pio 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module onchip_ram
+Info (12250): 2022.06.10.06:58:05 Progress: Adding pio_hex_1_0 [altera_avalon_pio 17.1]
 Warning (12251): Pio_hex_1_0: Used altera_avalon_pio 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module pio_hex_1_0
-Info (12250): 2022.06.03.13:59:57 Progress: Adding pio_hex_3_2 [altera_avalon_pio 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module pio_hex_1_0
+Info (12250): 2022.06.10.06:58:05 Progress: Adding pio_hex_3_2 [altera_avalon_pio 17.1]
 Warning (12251): Pio_hex_3_2: Used altera_avalon_pio 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module pio_hex_3_2
-Info (12250): 2022.06.03.13:59:57 Progress: Adding pio_hex_5_4 [altera_avalon_pio 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module pio_hex_3_2
+Info (12250): 2022.06.10.06:58:05 Progress: Adding pio_hex_5_4 [altera_avalon_pio 17.1]
 Warning (12251): Pio_hex_5_4: Used altera_avalon_pio 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module pio_hex_5_4
-Info (12250): 2022.06.03.13:59:57 Progress: Adding pio_led [altera_avalon_pio 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module pio_hex_5_4
+Info (12250): 2022.06.10.06:58:05 Progress: Adding pio_led [altera_avalon_pio 17.1]
 Warning (12251): Pio_led: Used altera_avalon_pio 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module pio_led
-Info (12250): 2022.06.03.13:59:57 Progress: Adding pio_sw [altera_avalon_pio 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module pio_led
+Info (12250): 2022.06.10.06:58:05 Progress: Adding pio_sw [altera_avalon_pio 17.1]
 Warning (12251): Pio_sw: Used altera_avalon_pio 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:57 Progress: Parameterizing module pio_sw
-Info (12250): 2022.06.03.13:59:58 Progress: Adding reset_bridge_0 [altera_reset_bridge 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module pio_sw
+Info (12250): 2022.06.10.06:58:05 Progress: Adding reset_bridge_0 [altera_reset_bridge 17.1]
 Warning (12251): Reset_bridge_0: Used altera_reset_bridge 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:58 Progress: Parameterizing module reset_bridge_0
-Info (12250): 2022.06.03.13:59:58 Progress: Adding reset_sequencer_0 [altera_reset_sequencer 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module reset_bridge_0
+Info (12250): 2022.06.10.06:58:05 Progress: Adding reset_sequencer_0 [altera_reset_sequencer 17.1]
 Warning (12251): Reset_sequencer_0: Used altera_reset_sequencer 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:58 Progress: Parameterizing module reset_sequencer_0
-Info (12250): 2022.06.03.13:59:58 Progress: Adding sdram [altera_avalon_new_sdram_controller 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module reset_sequencer_0
+Info (12250): 2022.06.10.06:58:05 Progress: Adding sdram [altera_avalon_new_sdram_controller 17.1]
 Warning (12251): Sdram: Used altera_avalon_new_sdram_controller 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:58 Progress: Parameterizing module sdram
-Info (12250): 2022.06.03.13:59:58 Progress: Adding soc_id [altera_avalon_pio 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module sdram
+Info (12250): 2022.06.10.06:58:05 Progress: Adding soc_id [altera_avalon_pio 17.1]
 Warning (12251): Soc_id: Used altera_avalon_pio 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:58 Progress: Parameterizing module soc_id
-Info (12250): 2022.06.03.13:59:58 Progress: Adding sys_pll [altpll 17.1]
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module soc_id
+Info (12250): 2022.06.10.06:58:05 Progress: Adding sys_pll [altpll 17.1]
 Warning (12251): Sys_pll: Used altpll 20.1 (instead of 17.1)
-Info (12250): 2022.06.03.13:59:58 Progress: Parameterizing module sys_pll
-Info (12250): 2022.06.03.13:59:58 Progress: Building connections
-Info (12250): 2022.06.03.13:59:58 Progress: Parameterizing connections
-Info (12250): 2022.06.03.13:59:58 Progress: Validating
-Info (12250): 2022.06.03.13:59:59 Progress: Done reading input file
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing module sys_pll
+Info (12250): 2022.06.10.06:58:05 Progress: Building connections
+Info (12250): 2022.06.10.06:58:05 Progress: Parameterizing connections
+Info (12250): 2022.06.10.06:58:05 Progress: Validating
+Info (12250): 2022.06.10.06:58:05 Progress: Done reading input file
 Info (12250): De10lite_sopc.core_clk_freq: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): De10lite_sopc.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
 Info (12250): De10lite_sopc.soc_id: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
@@ -69,33 +69,33 @@ Info (12250): Inserting clock-crossing logic between rsp_demux_003.src0 and rsp_
 Info (12250): Inserting clock-crossing logic between rsp_demux_003.src1 and rsp_mux_001.sink3
 Info (12250): Avl_dmem: "de10lite_sopc" instantiated altera_avalon_mm_bridge "avl_dmem"
 Info (12250): Bld_id: Starting RTL generation for module 'de10lite_sopc_bld_id'
-Info (12250): Bld_id:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_bld_id --dir=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0003_bld_id_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0003_bld_id_gen//de10lite_sopc_bld_id_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Bld_id:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_bld_id --dir=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0003_bld_id_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0003_bld_id_gen//de10lite_sopc_bld_id_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Bld_id: Done RTL generation for module 'de10lite_sopc_bld_id'
 Info (12250): Bld_id: "de10lite_sopc" instantiated altera_avalon_pio "bld_id"
 Info (12250): Core_clk_freq: Starting RTL generation for module 'de10lite_sopc_core_clk_freq'
-Info (12250): Core_clk_freq:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_core_clk_freq --dir=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0004_core_clk_freq_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0004_core_clk_freq_gen//de10lite_sopc_core_clk_freq_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Core_clk_freq:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_core_clk_freq --dir=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0004_core_clk_freq_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0004_core_clk_freq_gen//de10lite_sopc_core_clk_freq_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Core_clk_freq: Done RTL generation for module 'de10lite_sopc_core_clk_freq'
 Info (12250): Core_clk_freq: "de10lite_sopc" instantiated altera_avalon_pio "core_clk_freq"
 Info (12250): Default_slave: "de10lite_sopc" instantiated altera_error_response_slave "default_slave"
 Info (12250): Onchip_ram: Starting RTL generation for module 'de10lite_sopc_onchip_ram'
-Info (12250): Onchip_ram:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=de10lite_sopc_onchip_ram --dir=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0005_onchip_ram_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0005_onchip_ram_gen//de10lite_sopc_onchip_ram_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Onchip_ram:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=de10lite_sopc_onchip_ram --dir=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0005_onchip_ram_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0005_onchip_ram_gen//de10lite_sopc_onchip_ram_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Onchip_ram: Done RTL generation for module 'de10lite_sopc_onchip_ram'
 Info (12250): Onchip_ram: "de10lite_sopc" instantiated altera_avalon_onchip_memory2 "onchip_ram"
 Info (12250): Pio_hex_1_0: Starting RTL generation for module 'de10lite_sopc_pio_hex_1_0'
-Info (12250): Pio_hex_1_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_pio_hex_1_0 --dir=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0006_pio_hex_1_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0006_pio_hex_1_0_gen//de10lite_sopc_pio_hex_1_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_hex_1_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_pio_hex_1_0 --dir=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0006_pio_hex_1_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0006_pio_hex_1_0_gen//de10lite_sopc_pio_hex_1_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_hex_1_0: Done RTL generation for module 'de10lite_sopc_pio_hex_1_0'
 Info (12250): Pio_hex_1_0: "de10lite_sopc" instantiated altera_avalon_pio "pio_hex_1_0"
 Info (12250): Pio_led: Starting RTL generation for module 'de10lite_sopc_pio_led'
-Info (12250): Pio_led:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_pio_led --dir=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0007_pio_led_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0007_pio_led_gen//de10lite_sopc_pio_led_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_led:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_pio_led --dir=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0007_pio_led_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0007_pio_led_gen//de10lite_sopc_pio_led_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_led: Done RTL generation for module 'de10lite_sopc_pio_led'
 Info (12250): Pio_led: "de10lite_sopc" instantiated altera_avalon_pio "pio_led"
 Info (12250): Pio_sw: Starting RTL generation for module 'de10lite_sopc_pio_sw'
-Info (12250): Pio_sw:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_pio_sw --dir=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0008_pio_sw_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0008_pio_sw_gen//de10lite_sopc_pio_sw_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Pio_sw:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=de10lite_sopc_pio_sw --dir=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0008_pio_sw_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0008_pio_sw_gen//de10lite_sopc_pio_sw_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Pio_sw: Done RTL generation for module 'de10lite_sopc_pio_sw'
 Info (12250): Pio_sw: "de10lite_sopc" instantiated altera_avalon_pio "pio_sw"
 Info (12250): Reset_sequencer_0: "de10lite_sopc" instantiated altera_reset_sequencer "reset_sequencer_0"
 Info (12250): Sdram: Starting RTL generation for module 'de10lite_sopc_sdram'
-Info (12250): Sdram:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=de10lite_sopc_sdram --dir=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0010_sdram_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9146_4544192606679790894.dir/0010_sdram_gen//de10lite_sopc_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Sdram:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=de10lite_sopc_sdram --dir=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0010_sdram_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/chris/AppData/Local/Temp/alt9153_8826209520311040670.dir/0010_sdram_gen//de10lite_sopc_sdram_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Sdram: Done RTL generation for module 'de10lite_sopc_sdram'
 Info (12250): Sdram: "de10lite_sopc" instantiated altera_avalon_new_sdram_controller "sdram"
 Info (12250): Sys_pll: "de10lite_sopc" instantiated altpll "sys_pll"
@@ -184,6 +184,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
 Info (12021): Found 1 design units, including 1 entities, in source file /users/chris/documents/github/ai-risc-v-hacakthon/scr1/src/top/scr1_dp_memory.sv
 Info (12021): Found 1 design units, including 1 entities, in source file /users/chris/documents/github/ai-risc-v-hacakthon/scr1/src/top/scr1_tcm.sv
 Info (12021): Found 1 design units, including 1 entities, in source file /users/chris/documents/github/ai-risc-v-hacakthon/scr1/src/top/scr1_timer.sv
+Info (12021): Found 1 design units, including 1 entities, in source file /users/chris/documents/github/ai-risc-v-hacakthon/scr1/src/top/fixedfloatmult.sv
+Info (12021): Found 1 design units, including 1 entities, in source file /users/chris/documents/github/ai-risc-v-hacakthon/scr1/src/top/neuron.sv
+Info (12021): Found 1 design units, including 1 entities, in source file /users/chris/documents/github/ai-risc-v-hacakthon/scr1/src/top/neuralcore.sv
+Info (12021): Found 1 design units, including 1 entities, in source file /users/chris/documents/github/ai-risc-v-hacakthon/scr1/src/top/scr1_accel.sv
 Info (12021): Found 1 design units, including 1 entities, in source file /users/chris/documents/github/ai-risc-v-hacakthon/scr1/src/top/scr1_top_ahb.sv
 Info (10281): Verilog HDL Declaration information at ahb_avalon_bridge.sv(12): object "write" differs only in case from object "WRITE" in the same scope File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/fpga/de10lite/scr1/ip/ahb_avalon_bridge.sv Line: 12
 Info (10281): Verilog HDL Declaration information at ahb_avalon_bridge.sv(13): object "read" differs only in case from object "READ" in the same scope File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/fpga/de10lite/scr1/ip/ahb_avalon_bridge.sv Line: 13
@@ -284,9 +288,9 @@ Info (12021): Found 4 design units, including 4 entities, in source file db/ip/d
 Warning (10236): Verilog HDL Implicit Net warning at uart_regs.v(400): created implicit net for "rf_overrun" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/fpga/de10lite/scr1/ip/uart/uart_regs.v Line: 400
 Warning (10236): Verilog HDL Implicit Net warning at uart_regs.v(400): created implicit net for "rf_push_pulse" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/fpga/de10lite/scr1/ip/uart/uart_regs.v Line: 400
 Info (12128): Elaborating entity "scr1_top_ahb" for hierarchy "scr1_top_ahb:i_scr1" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/fpga/de10lite/scr1/de10lite_scr1.sv Line: 318
-Info (12128): Elaborating entity "scr1_reset_sync_cell" for hierarchy "scr1_top_ahb:i_scr1|scr1_reset_sync_cell:i_pwrup_rstn_reset_sync" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 183
-Info (12128): Elaborating entity "scr1_reset_and2_cell" for hierarchy "scr1_top_ahb:i_scr1|scr1_reset_and2_cell:i_tapc_rstn_and2_cell" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 216
-Info (12128): Elaborating entity "scr1_core_top" for hierarchy "scr1_top_ahb:i_scr1|scr1_core_top:i_core_top" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 282
+Info (12128): Elaborating entity "scr1_reset_sync_cell" for hierarchy "scr1_top_ahb:i_scr1|scr1_reset_sync_cell:i_pwrup_rstn_reset_sync" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 212
+Info (12128): Elaborating entity "scr1_reset_and2_cell" for hierarchy "scr1_top_ahb:i_scr1|scr1_reset_and2_cell:i_tapc_rstn_and2_cell" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 245
+Info (12128): Elaborating entity "scr1_core_top" for hierarchy "scr1_top_ahb:i_scr1|scr1_core_top:i_core_top" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 311
 Info (12128): Elaborating entity "scr1_scu" for hierarchy "scr1_top_ahb:i_scr1|scr1_core_top:i_core_top|scr1_scu:i_scu" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/core/scr1_core_top.sv Line: 231
 Info (12128): Elaborating entity "scr1_reset_qlfy_adapter_cell_sync" for hierarchy "scr1_top_ahb:i_scr1|scr1_core_top:i_core_top|scr1_scu:i_scu|scr1_reset_qlfy_adapter_cell_sync:i_sys_rstn_qlfy_adapter_cell_sync" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/core/scr1_scu.sv Line: 369
 Info (12128): Elaborating entity "scr1_reset_buf_cell" for hierarchy "scr1_top_ahb:i_scr1|scr1_core_top:i_core_top|scr1_scu:i_scu|scr1_reset_qlfy_adapter_cell_sync:i_sys_rstn_qlfy_adapter_cell_sync|scr1_reset_buf_cell:i_reset_output_buf" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/core/primitives/scr1_reset_cells.sv Line: 193
@@ -317,15 +321,19 @@ Info (10264): Verilog HDL Case Statement information at scr1_dm.sv(1074): all ca
 Info (10264): Verilog HDL Case Statement information at scr1_dm.sv(1201): all case item expressions in this case statement are onehot File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/core/scr1_dm.sv Line: 1201
 Info (10264): Verilog HDL Case Statement information at scr1_dm.sv(1236): all case item expressions in this case statement are onehot File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/core/scr1_dm.sv Line: 1236
 Info (10264): Verilog HDL Case Statement information at scr1_dm.sv(1332): all case item expressions in this case statement are onehot File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/core/scr1_dm.sv Line: 1332
-Info (12128): Elaborating entity "scr1_tcm" for hierarchy "scr1_top_ahb:i_scr1|scr1_tcm:i_tcm" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 311
+Info (12128): Elaborating entity "scr1_tcm" for hierarchy "scr1_top_ahb:i_scr1|scr1_tcm:i_tcm" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 340
 Info (12128): Elaborating entity "scr1_dp_memory" for hierarchy "scr1_top_ahb:i_scr1|scr1_tcm:i_tcm|scr1_dp_memory:i_dp_memory" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_tcm.sv Line: 117
-Info (12128): Elaborating entity "scr1_timer" for hierarchy "scr1_top_ahb:i_scr1|scr1_timer:i_timer" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 337
-Info (12128): Elaborating entity "scr1_imem_router" for hierarchy "scr1_top_ahb:i_scr1|scr1_imem_router:i_imem_router" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 375
+Info (12128): Elaborating entity "scr1_timer" for hierarchy "scr1_top_ahb:i_scr1|scr1_timer:i_timer" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 366
+Info (12128): Elaborating entity "scr1_imem_router" for hierarchy "scr1_top_ahb:i_scr1|scr1_imem_router:i_imem_router" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 404
 Info (10264): Verilog HDL Case Statement information at scr1_imem_router.sv(79): all case item expressions in this case statement are onehot File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_imem_router.sv Line: 79
-Info (12128): Elaborating entity "scr1_dmem_router" for hierarchy "scr1_top_ahb:i_scr1|scr1_dmem_router:i_dmem_router" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 454
-Info (10264): Verilog HDL Case Statement information at scr1_dmem_router.sv(110): all case item expressions in this case statement are onehot File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_dmem_router.sv Line: 110
-Info (12128): Elaborating entity "scr1_imem_ahb" for hierarchy "scr1_top_ahb:i_scr1|scr1_imem_ahb:i_imem_ahb" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 479
-Info (12128): Elaborating entity "scr1_dmem_ahb" for hierarchy "scr1_top_ahb:i_scr1|scr1_dmem_ahb:i_dmem_ahb" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 509
+Info (12128): Elaborating entity "scr1_dmem_router" for hierarchy "scr1_top_ahb:i_scr1|scr1_dmem_router:i_dmem_router" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 492
+Info (10264): Verilog HDL Case Statement information at scr1_dmem_router.sv(128): all case item expressions in this case statement are onehot File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_dmem_router.sv Line: 128
+Info (12128): Elaborating entity "scr1_accel" for hierarchy "scr1_top_ahb:i_scr1|scr1_accel:scr1_accel_inst" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 520
+Info (12128): Elaborating entity "NeuralCore" for hierarchy "scr1_top_ahb:i_scr1|NeuralCore:NeuralCore_inst" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 540
+Info (12128): Elaborating entity "Neuron" for hierarchy "scr1_top_ahb:i_scr1|NeuralCore:NeuralCore_inst|Neuron:Neuron_genblk[0].pixel_cut[0].Neuron_inst" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/NeuralCore.sv Line: 81
+Info (12128): Elaborating entity "FixedFloatMult" for hierarchy "scr1_top_ahb:i_scr1|NeuralCore:NeuralCore_inst|Neuron:Neuron_genblk[0].pixel_cut[0].Neuron_inst|FixedFloatMult:FixedFloatMult_inst" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/Neuron.sv Line: 35
+Info (12128): Elaborating entity "scr1_imem_ahb" for hierarchy "scr1_top_ahb:i_scr1|scr1_imem_ahb:i_imem_ahb" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 565
+Info (12128): Elaborating entity "scr1_dmem_ahb" for hierarchy "scr1_top_ahb:i_scr1|scr1_dmem_ahb:i_dmem_ahb" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/scr1_top_ahb.sv Line: 595
 Info (12128): Elaborating entity "uart_top" for hierarchy "uart_top:i_uart" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/fpga/de10lite/scr1/de10lite_scr1.sv Line: 365
 Info (10648): Verilog HDL Display System Task info at uart_top.v(327): (...|uart_top) UART INFO: Data bus width is 8. No Debug interface.\n File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/fpga/de10lite/scr1/ip/uart/uart_top.v Line: 327
 Info (10648): Verilog HDL Display System Task info at uart_top.v(334): (...|uart_top) UART INFO: Doesn't have baudrate output\n File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/fpga/de10lite/scr1/ip/uart/uart_top.v Line: 334
@@ -492,4 +500,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
 Info (12130): Elaborated megafunction instantiation "scr1_top_ahb:i_scr1|scr1_core_top:i_core_top|scr1_pipe_top:i_pipe_top|scr1_pipe_exu:i_pipe_exu|scr1_pipe_ialu:i_ialu|lpm_mult:Mult0" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/core/pipeline/scr1_pipe_ialu.sv Line: 409
 Info (12133): Instantiated megafunction "scr1_top_ahb:i_scr1|scr1_core_top:i_core_top|scr1_pipe_top:i_pipe_top|scr1_pipe_exu:i_pipe_exu|scr1_pipe_ialu:i_ialu|lpm_mult:Mult0" with the following parameter: File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/core/pipeline/scr1_pipe_ialu.sv Line: 409
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_ugs.tdf
+Info (12130): Elaborated megafunction instantiation "scr1_top_ahb:i_scr1|NeuralCore:NeuralCore_inst|Neuron:Neuron_genblk[4].pixel_cut[1].Neuron_inst|FixedFloatMult:FixedFloatMult_inst|lpm_mult:Mult0" File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/FixedFloatMult.sv Line: 18
+Info (12133): Instantiated megafunction "scr1_top_ahb:i_scr1|NeuralCore:NeuralCore_inst|Neuron:Neuron_genblk[4].pixel_cut[1].Neuron_inst|FixedFloatMult:FixedFloatMult_inst|lpm_mult:Mult0" with the following parameter: File: C:/Users/chris/Documents/GitHub/AI-risc-V-Hacakthon/scr1/src/top/FixedFloatMult.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_ams.tdf
 Warning (13024): Output pins are stuck at VCC or GND

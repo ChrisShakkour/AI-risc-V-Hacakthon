@@ -1,3 +1,7 @@
+top/FixedFloatMult.sv
+top/Neuron.sv
+top/NeuralCore.sv
+top/scr1_accel.sv
 top/scr1_dmem_router.sv
 top/scr1_imem_router.sv
 top/scr1_dp_memory.sv

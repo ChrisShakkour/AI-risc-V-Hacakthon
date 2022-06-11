@@ -370,7 +370,7 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS OFF
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS OFF
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -403,6 +403,12 @@ set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/scr1_dmem_r
 set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/scr1_dp_memory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/scr1_tcm.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/scr1_timer.sv
+
+set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/FixedFloatMult.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/Neuron.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/NeuralCore.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/scr1_accel.sv
+
 set_global_assignment -name SYSTEMVERILOG_FILE ../../../scr1/src/top/scr1_top_ahb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ip/ahb_avalon_bridge.sv
 set_global_assignment -name VERILOG_FILE ip/uart/timescale.v

@@ -163,10 +163,39 @@ logic [`SCR1_DMEM_DWIDTH-1:0]                       timer_dmem_wdata;
 logic [`SCR1_DMEM_DWIDTH-1:0]                       timer_dmem_rdata;
 type_scr1_mem_resp_e                                timer_dmem_resp;
 
+// Accelerator AHB interface
+logic 					    								    accel_dmem_req_ack;   
+logic 					    									 accel_dmem_req;
+type_scr1_mem_cmd_e             							 accel_dmem_cmd;
+type_scr1_mem_width_e           							 accel_dmem_width;
+logic [`SCR1_DMEM_AWIDTH-1:0] 		    				 accel_dmem_addr;
+logic [`SCR1_DMEM_DWIDTH-1:0] 		    				 accel_dmem_wdata;
+logic [`SCR1_DMEM_DWIDTH-1:0] 		    			 	 accel_dmem_rdata;
+type_scr1_mem_resp_e            							 accel_dmem_resp;
+ 
+   
 logic                                               timer_irq;
 logic [63:0]                                        timer_val;
 
+   
+   parameter integer 				    N_NEURONS=10;
+   parameter integer 				    N_PIXELS=49;
+   parameter integer 				    W_BIAS=32;
+   parameter integer 				    W_WEIGHT=32;
+   parameter integer 				    W_PIXEL=32;
+   parameter integer 				    W_RESULT=32;
+   
+   //accel_regs config
+   logic [N_NEURONS-1:0][W_BIAS-1:0] 		    bias_regs;
+   logic [N_NEURONS-1:0][N_PIXELS-1:0][W_WEIGHT-1:0] weight_regs;
+   logic [9:0][W_PIXEL-1:0] 			     pixel_regs;
+   logic                                             pixel_ready;
+   logic 					     new_layer; 					     
+   logic [N_NEURONS-1:0][W_RESULT-1:0] 		     neurons_result_regs;
+   //logic 					     pixel_done;
+   //logic 					     layer_done;
 
+   
 //-------------------------------------------------------------------------------
 // Reset logic
 //-------------------------------------------------------------------------------
@@ -442,6 +471,15 @@ scr1_dmem_router #(
     .port2_wdata    (timer_dmem_wdata    ),
     .port2_rdata    (timer_dmem_rdata    ),
     .port2_resp     (timer_dmem_resp     ),
+    // Interface to accelerator
+    .port3_req_ack  (accel_dmem_req_ack  ),
+    .port3_req      (accel_dmem_req      ),
+    .port3_cmd      (accel_dmem_cmd      ),
+    .port3_width    (accel_dmem_width    ),
+    .port3_addr     (accel_dmem_addr     ),
+    .port3_wdata    (accel_dmem_wdata    ),
+    .port3_rdata    (accel_dmem_rdata    ),
+    .port3_resp     (accel_dmem_resp     ),
     // Interface to AHB bridge
     .port0_req_ack  (ahb_dmem_req_ack    ),
     .port0_req      (ahb_dmem_req        ),
@@ -450,10 +488,58 @@ scr1_dmem_router #(
     .port0_addr     (ahb_dmem_addr       ),
     .port0_wdata    (ahb_dmem_wdata      ),
     .port0_rdata    (ahb_dmem_rdata      ),
-    .port0_resp     (ahb_dmem_resp       )
+    .port0_resp     (ahb_dmem_resp       )		 
 );
 
 
+//-------------------------------------------------------------------------------
+// Accelerator reg instance
+//-------------------------------------------------------------------------------
+   scr1_accel scr1_accel_inst
+     (
+      // Control signals
+      .clk   (clk),
+      .rst_n (core_rst_n_local),
+      // Core data interface
+      .dmem_req_ack (accel_dmem_req_ack),
+      .dmem_req     (accel_dmem_req),
+      .dmem_cmd     (accel_dmem_cmd),
+      .dmem_width   (accel_dmem_width),
+      .dmem_addr    (accel_dmem_addr),
+      .dmem_wdata   (accel_dmem_wdata),
+      .dmem_rdata   (accel_dmem_rdata),
+      .dmem_resp    (accel_dmem_resp),
+
+      .bias_regs(bias_regs),
+      .weight_regs(weight_regs),
+      .pixel_regs(pixel_regs),
+      .pixel_ready(pixel_ready),
+      .new_layer(new_layer),
+      //.layer_done(layer_done),
+      .neurons_result_regs(neurons_result_regs)  			     
+      );
+
+//-------------------------------------------------------------------------------
+// Accelerator core instance
+//-------------------------------------------------------------------------------
+   NeuralCore
+     NeuralCore_inst
+       (
+	// Control signals
+	.clk(clk),
+	.rstn(rst_n),
+	//accel_regs config
+	.bias_regs(bias_regs),
+	.weight_regs(weight_regs),
+	.pixel_regs(pixel_regs),
+	.pixel_ready(pixel_ready),
+	.new_layer(new_layer),
+	.neurons_result_regs(neurons_result_regs)
+//	.pixel_done(pixel_done),
+//	.layer_done(layer_done)
+	);
+
+   
 //-------------------------------------------------------------------------------
 // Instruction memory AHB bridge
 //-------------------------------------------------------------------------------

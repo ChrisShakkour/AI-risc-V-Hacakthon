@@ -1,0 +1,7 @@
+    input logic [N_NEURONS-1:0][W_BIAS-1:0]                 bias_regs ,
+        input logic [N_NEURONS-1:0][N_PIXELS-1:0][W_WEIGHT-1:0] weight_regs,
+	    input logic [9:0][W_PIXEL-1:0]                          pixel_regs,
+	        input logic                                             pixel_ready,
+		    output logic [N_NEURONS-1:0][W_RESULT-1:0]              neurons_result_regs,
+		        output logic                                            pixel_done;
+			    output logic                                            layer_done;

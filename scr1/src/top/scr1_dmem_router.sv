@@ -10,7 +10,10 @@ module scr1_dmem_router
     parameter SCR1_PORT1_ADDR_MASK      = `SCR1_DMEM_AWIDTH'hFFFF0000,
     parameter SCR1_PORT1_ADDR_PATTERN   = `SCR1_DMEM_AWIDTH'h00010000,
     parameter SCR1_PORT2_ADDR_MASK      = `SCR1_DMEM_AWIDTH'hFFFF0000,
-    parameter SCR1_PORT2_ADDR_PATTERN   = `SCR1_DMEM_AWIDTH'h00020000
+    parameter SCR1_PORT2_ADDR_PATTERN   = `SCR1_DMEM_AWIDTH'h00020000,
+  
+    parameter SCR1_PORT3_ADDR_MASK      = `SCR1_DMEM_AWIDTH'hFFFF0000,
+    parameter SCR1_PORT3_ADDR_PATTERN   = `SCR1_DMEM_AWIDTH'hf0010000
 )
 (
     // Control signals
@@ -55,7 +58,17 @@ module scr1_dmem_router
     output  logic [`SCR1_DMEM_AWIDTH-1:0]   port2_addr,
     output  logic [`SCR1_DMEM_DWIDTH-1:0]   port2_wdata,
     input   logic [`SCR1_DMEM_DWIDTH-1:0]   port2_rdata,
-    input   type_scr1_mem_resp_e            port2_resp
+    input   type_scr1_mem_resp_e            port2_resp,
+
+    // PORT3 interface
+    input   logic                           port3_req_ack,
+    output  logic                           port3_req,
+    output  type_scr1_mem_cmd_e             port3_cmd,
+    output  type_scr1_mem_width_e           port3_width,
+    output  logic [`SCR1_DMEM_AWIDTH-1:0]   port3_addr,
+    output  logic [`SCR1_DMEM_DWIDTH-1:0]   port3_wdata,
+    input   logic [`SCR1_DMEM_DWIDTH-1:0]   port3_rdata,
+    input   type_scr1_mem_resp_e            port3_resp
 );
 
 //-------------------------------------------------------------------------------
@@ -69,7 +82,8 @@ typedef enum logic {
 typedef enum logic [1:0] {
     SCR1_SEL_PORT0,
     SCR1_SEL_PORT1,
-    SCR1_SEL_PORT2
+    SCR1_SEL_PORT2,
+    SCR1_SEL_PORT3
 } type_scr1_sel_e;
 
 //-------------------------------------------------------------------------------
@@ -86,12 +100,16 @@ logic                           sel_req_ack;
 // FSM
 //-------------------------------------------------------------------------------
 always_comb begin
-    port_sel    = SCR1_SEL_PORT0;
-    if ((dmem_addr & SCR1_PORT1_ADDR_MASK) == SCR1_PORT1_ADDR_PATTERN) begin
-        port_sel    = SCR1_SEL_PORT1;
-    end else if ((dmem_addr & SCR1_PORT2_ADDR_MASK) == SCR1_PORT2_ADDR_PATTERN) begin
-        port_sel    = SCR1_SEL_PORT2;
-    end
+   port_sel    = SCR1_SEL_PORT0;
+   if ((dmem_addr & SCR1_PORT1_ADDR_MASK) == SCR1_PORT1_ADDR_PATTERN) begin
+      port_sel    = SCR1_SEL_PORT1;
+   end 
+   else if ((dmem_addr & SCR1_PORT2_ADDR_MASK) == SCR1_PORT2_ADDR_PATTERN) begin
+      port_sel    = SCR1_SEL_PORT2;
+   end 
+   else if((dmem_addr & SCR1_PORT3_ADDR_MASK) == SCR1_PORT3_ADDR_PATTERN) begin
+      port_sel    = SCR1_SEL_PORT3;
+   end
 end
 
 always_ff @(negedge rst_n, posedge clk) begin
@@ -135,6 +153,7 @@ always_comb begin
             SCR1_SEL_PORT0  : sel_req_ack   = port0_req_ack;
             SCR1_SEL_PORT1  : sel_req_ack   = port1_req_ack;
             SCR1_SEL_PORT2  : sel_req_ack   = port2_req_ack;
+            SCR1_SEL_PORT3  : sel_req_ack   = port3_req_ack;
             default         : sel_req_ack   = 1'b0;
         endcase
     end else begin
@@ -156,6 +175,10 @@ always_comb begin
             sel_rdata   = port2_rdata;
             sel_resp    = port2_resp;
         end
+        SCR1_SEL_PORT3  : begin
+            sel_rdata   = port3_rdata;
+            sel_resp    = port3_resp;
+        end     
         default         : begin
             sel_rdata   = '0;
             sel_resp    = SCR1_MEM_RESP_RDY_ER;
@@ -263,6 +286,38 @@ assign port2_addr   = dmem_addr ;
 assign port2_wdata  = dmem_wdata;
 `endif // SCR1_XPROP_EN
 
+//-------------------------------------------------------------------------------
+// Interface to PORT3
+//-------------------------------------------------------------------------------
+always_comb begin
+    port3_req = 1'b0;
+    case (fsm)
+        SCR1_FSM_ADDR : begin
+            port3_req = dmem_req & (port_sel == SCR1_SEL_PORT3);
+        end
+        SCR1_FSM_DATA : begin
+            if (sel_resp == SCR1_MEM_RESP_RDY_OK) begin
+                port3_req = dmem_req & (port_sel == SCR1_SEL_PORT3);
+            end
+        end
+        default : begin
+        end
+    endcase
+end
+
+`ifdef SCR1_XPROP_EN
+assign port3_cmd    = (port_sel == SCR1_SEL_PORT3) ? dmem_cmd   : SCR1_MEM_CMD_ERROR;
+assign port3_width  = (port_sel == SCR1_SEL_PORT3) ? dmem_width : SCR1_MEM_WIDTH_ERROR;
+assign port3_addr   = (port_sel == SCR1_SEL_PORT3) ? dmem_addr  : 'x;
+assign port3_wdata  = (port_sel == SCR1_SEL_PORT3) ? dmem_wdata : 'x;
+`else // SCR1_XPROP_EN
+assign port3_cmd    = dmem_cmd  ;
+assign port3_width  = dmem_width;
+assign port3_addr   = dmem_addr ;
+assign port3_wdata  = dmem_wdata;
+`endif // SCR1_XPROP_EN
+
+   
 `ifdef SCR1_TRGT_SIMULATION
 //-------------------------------------------------------------------------------
 // Assertion

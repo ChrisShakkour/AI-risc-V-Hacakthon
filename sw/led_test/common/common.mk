@@ -27,6 +27,7 @@ MEM ?= tcm
 OPT ?= 2
 
 CRT0 ?= $(COMMON_BASE)/ncrt0.S
+#CRT0 ?= $(COMMON_BASE)/startup.S
 
 ld_script ?= $(COMMON_BASE)/$(MEM).ld
 

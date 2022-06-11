@@ -1,0 +1,1 @@
+make PLATFORM=de10lite_scr1 OPT=2 clean all

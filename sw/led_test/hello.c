@@ -6,6 +6,9 @@
 #include "csr.h"
 
 #define SECOND 1000000
+//#define ACCEL_ADDR 0xf0020000
+
+//void interrupt_func_handler();
 
 #ifdef PLF_HEXLED_ADDR
 
@@ -94,13 +97,32 @@ int main(void)
       rtc_delay_us(SECOND);    
     }
 
+
+    printf("starting accel routine\n");
+    unsigned *accelAddr;
+    accelAddr = (int*)(0xf0010000);
+    *(accelAddr + 2) = 4; 
+    *(accelAddr + 3) = 2;
+    printf("A IS 0X%x\nB IS 0X%x\n", *(accelAddr+2), *(accelAddr+3));
+    *(accelAddr) = 0x000000ff;
+    rtc_delay_us(20000);
+    int result, cycles;
+    result = *(accelAddr + 4);
+    cycles = *(accelAddr + 1);
+    printf("accel calculation completed in %d, C is 0x%x", cycles, result);
+
+    /*
+    uint32_t *dipSwitchAddr;
+    dipSwitchAddr = (uint32_t*)(PLF_DIP_ADDR);
     uint8_t count=0;
     while(1){
       rtc_delay_us(200000);
       sc1f_leds_set(count++);
+      printf("Dip switch register values 0x%x\n", *dipSwitchAddr);
     }
-
-
+    */
+    
+      
     //read_csr(reg);
     //write_csr(reg, val);
 
@@ -113,6 +135,13 @@ int main(void)
     sc1f_leds_hex_digit(4, 5);
     sc1f_leds_hex_digit(5, 6);
     */
-    
+    printf("end of main function\n");
     return 0;
 }
+
+
+/*
+void interrupt_func_handler(){
+  printf("Interrupt Handler called\n");
+}
+*/
